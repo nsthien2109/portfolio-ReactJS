@@ -19,8 +19,7 @@ const NavbarMobileItem = ({ navRedirect, navIconName, navName }) => {
           ? "selected-active dark:text-slate-300"
           : "block w-full py-2 text-gray-600 dark:text-slate-300"
       }
-      onClick={handleChangeNav}
-    >
+      onClick={handleChangeNav}>
       <div className="flex flex-col items-center justify-center w-full h-full">
         <ion-icon name={navIconName}></ion-icon>
         <p className="text-base">{navName}</p>

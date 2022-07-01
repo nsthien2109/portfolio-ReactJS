@@ -82,6 +82,10 @@ body {
 .share-social span {
   padding: 0 10px;
 }
+
+.modal-container {
+  transition: all ease 4s;
+}
 /* swiper lib */
 
 .swiper {

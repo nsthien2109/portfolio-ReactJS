@@ -35,8 +35,7 @@ const About = () => {
                   </p>
                   <button
                     onClick={handleOpenModal}
-                    className="py-4 text-white bg-black dark:text-black dark:bg-white px-9"
-                  >
+                    className="py-4 text-white bg-black dark:text-black dark:bg-white px-9">
                     Read More
                   </button>
                 </div>

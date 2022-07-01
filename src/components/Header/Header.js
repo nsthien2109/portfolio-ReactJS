@@ -14,23 +14,19 @@ const Header = ({ handleDarkModeChange, darkMode }) => {
           </div>
           <span
             onClick={darkModeChange}
-            className="flex items-center justify-center p-1 text-2xl bg-gray-300 rounded-full md:p-3 mode-color"
-          >
+            className="flex items-center justify-center p-1 text-2xl bg-gray-300 rounded-full md:p-3 mode-color">
             <ion-icon
-              name={darkMode ? "sunny-outline" : "moon-outline"}
-            ></ion-icon>
+              name={darkMode ? "sunny-outline" : "moon-outline"}></ion-icon>
           </span>
         </div>
       </div>
       <div className="z-10 items-center justify-center hidden xl:fixed top-3 right-3 xl:flex">
         <span
           onClick={darkModeChange}
-          className="flex items-center justify-center p-1 text-2xl bg-gray-300 rounded-full md:p-3 mode-color"
-        >
+          className="flex items-center justify-center p-1 text-2xl bg-gray-300 rounded-full md:p-3 mode-color">
           <ion-icon
             className="text-yellow-400"
-            name={darkMode ? "sunny-outline" : "moon-outline"}
-          ></ion-icon>
+            name={darkMode ? "sunny-outline" : "moon-outline"}></ion-icon>
         </span>
       </div>
     </>

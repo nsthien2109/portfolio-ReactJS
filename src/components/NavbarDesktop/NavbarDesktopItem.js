@@ -19,12 +19,10 @@ const NavbarDesktopItem = ({ navRedirect, navIconName, navName }) => {
         page === navName
           ? "selected-active dark:text-white"
           : "block w-full my-2 text-slate-400 text-base dark:text-slate-300"
-      }
-    >
+      }>
       <span
         onClick={handleChangeNav}
-        className="flex items-center w-full h-full"
-      >
+        className="flex items-center w-full h-full">
         <ion-icon name={navIconName}></ion-icon>
         <p className="ml-3 text-base">{navName}</p>
       </span>

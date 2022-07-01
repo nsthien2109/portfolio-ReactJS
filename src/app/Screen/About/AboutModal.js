@@ -23,13 +23,11 @@ const AboutModal = ({ handleOpenModal, openModal }) => {
         openModal
           ? "fixed top-0 bottom-0 left-0 right-0 z-50 modal-about"
           : "hidden transition-all modal-about"
-      }
-    >
+      }>
       <div className="flex items-center justify-center w-full h-screen bg-[#000000bf]">
         <div
           onClick={(event) => event.stopPropagation()}
-          className="relative overflow-scroll top-0 left-0 right-0 w-[350px] min-w-[350px] sm:w-[550px] md:w-[750px] lg:w-[850px] xl:w-[940px] rounded h-4/5 bg-white dark:bg-[#151515] mx-[15px] px-6 py-14"
-        >
+          className="relative overflow-scroll top-0 left-0 right-0 w-[350px] min-w-[350px] sm:w-[550px] md:w-[750px] lg:w-[850px] xl:w-[940px] rounded h-4/5 bg-white dark:bg-[#151515] mx-[15px] px-6 py-14">
           <h3 className="text-xl font-bold text-black dark:text-white">
             Personalty Skills
           </h3>
@@ -63,8 +61,7 @@ const AboutModal = ({ handleOpenModal, openModal }) => {
                 disableOnInteraction: false,
               }}
               modules={[Autoplay]}
-              className="mySwiper w-full mt-10"
-            >
+              className="mySwiper w-full mt-10">
               <SwiperSlide>
                 <div className="w-full flex justify-center items-center py-2 bg-zinc-300 opacity-60 hover:opacity-100">
                   <img
@@ -148,8 +145,7 @@ const AboutModal = ({ handleOpenModal, openModal }) => {
 
           <span
             onClick={CloseModalClick}
-            className="close-button top-4 text-2xl text-black dark:text-white font-bold absolute right-4"
-          >
+            className="close-button top-4 text-2xl text-black dark:text-white font-bold absolute right-4">
             <ion-icon name="close-outline"></ion-icon>
           </span>
         </div>

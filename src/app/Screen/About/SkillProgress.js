@@ -15,8 +15,7 @@ const SkillProgress = ({ nameSkill, persen }) => {
         <div className="progress_bar w-full h-[4px] bg-slate-200 dark:bg-black">
           <div
             className="progress h-full dark:bg-white bg-black"
-            style={widthProgress}
-          ></div>
+            style={widthProgress}></div>
         </div>
       </div>
     </div>

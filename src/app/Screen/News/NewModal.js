@@ -11,13 +11,11 @@ const NewModal = ({ newModalOpen, handleOpenNewModal }) => {
         onClick={CloseNewModalClick}
         className={`${
           newModalOpen ? "block" : "hidden"
-        } w-full h-screen fixed top-0 left-0 right-0 bottom-0 z-50 bg-[#000000bf] overlay px-4`}
-      >
+        } w-full h-screen fixed top-0 left-0 right-0 bottom-0 z-50 bg-[#000000bf] overlay px-4 modal-container`}>
         <div className="flex w-full h-full justify-center items-center">
           <div
             onClick={(event) => event.stopPropagation()}
-            className="modal-new rounded overflow-scroll overflow-x-hidden sm:w-[550px] md:w-[750px] lg:w-[850px] xl:w-[75%] dark:bg-[#151515] bg-white"
-          >
+            className="modal-new rounded overflow-scroll overflow-x-hidden sm:w-[550px] md:w-[750px] lg:w-[850px] xl:w-[75%] dark:bg-[#151515] bg-white">
             <div className="w-full h-auto image-main-blog">
               <img src={imgBlog} className="object-cover" alt="" />
             </div>
@@ -64,8 +62,7 @@ const NewModal = ({ newModalOpen, handleOpenNewModal }) => {
             </div>
             <button
               onClick={CloseNewModalClick}
-              className="close-new-modal z-50  fixed top-5 right-2 lg:right-10 lg:p-3 text-xl flex items-center justify-center p-1 rounded-full bg-gray-50"
-            >
+              className="close-new-modal z-50  fixed top-5 right-2 lg:right-10 lg:p-3 text-xl flex items-center justify-center p-1 rounded-full bg-gray-50">
               <ion-icon name="close-outline"></ion-icon>
             </button>
           </div>
