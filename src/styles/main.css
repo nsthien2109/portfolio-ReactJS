@@ -1,0 +1,112 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.selected-active {
+  color: #000;
+  font-weight: 600;
+  font-size: 20px;
+  width: 100%;
+  display: block;
+  margin: 8px 0;
+}
+
+.image-avatar {
+  background-image: url("../assets/images/ava.jpg");
+  background-size: cover;
+  animation: morph 8s ease-in-out 1s infinite;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  box-shadow: inset 0 0 0 9px hsl(0deg 0% 100% / 30%);
+  transition: background-color 1s;
+}
+
+.category-active {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.portfolio-item {
+  position: relative;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.portfolio-item-shot {
+  position: absolute;
+  top: calc(var(--y, 0) * 1px - 100px);
+  left: calc(var(--x, 0) * 1px - 100px);
+  width: fit-content;
+  height: fit-content;
+  display: none;
+  transition: opacity 0.2s;
+  background-color: #fff;
+}
+
+.portfolio-item:hover > .portfolio-item-shot {
+  opacity: 0.8;
+  display: block;
+}
+
+.tools-list {
+  display: -webkit-inline-box;
+}
+
+.modal-about {
+  transition: all ease 3s;
+}
+
+/* news */
+
+.modal-new {
+  width: 100%;
+  min-width: 350px;
+  height: 85%;
+  margin: 32px 0;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.author-date-new {
+  width: 100%;
+  color: #777777;
+}
+
+.author-date-new .author-name {
+  border-bottom: 0.5px solid #999999;
+}
+
+.share-social span {
+  padding: 0 10px;
+}
+/* swiper lib */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 50% !important;
+  margin-right: 5px !important;
+}
+
+/* ANTD lib */
+
+.ant-pagination-item-active {
+  border-color: black;
+  border-radius: 100%;
+}
+
+.ant-pagination-item-active a {
+  color: #000;
+}
+
+.ant-pagination-item:hover {
+  border-color: #539221;
+  color: #000;
+  transition: all 0.3s;
+}
