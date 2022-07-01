@@ -1,7 +1,11 @@
 import React, { useEffect } from "react";
 import { Slide } from "react-awesome-reveal";
 
-const PortfolioItem = ({ imageApp, appName, appType, id }) => {
+const PortfolioItem = ({ imageApp, appName, appType, onClickItem }) => {
+  const handleDetail = () => {
+    onClickItem();
+  };
+
   useEffect(() => {
     document.querySelectorAll(".portfolio-item").forEach((item) => {
       return item.addEventListener("mousemove", (e) => {
@@ -14,7 +18,9 @@ const PortfolioItem = ({ imageApp, appName, appType, id }) => {
 
   return (
     <Slide cascade>
-      <div className="w-full h-auto bg-[#e5e5e5] dark:bg-gray-800 rounded-md portfolio-item">
+      <div
+        onClick={handleDetail}
+        className="w-full h-auto bg-[#e5e5e5] dark:bg-gray-800 rounded-md portfolio-item">
         <img
           src={imageApp}
           alt=""

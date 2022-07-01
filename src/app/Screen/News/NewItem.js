@@ -6,10 +6,10 @@ const NewItem = ({
   dateNew,
   titleNew,
   imageNew,
-  handleOpenNewModal,
+  handleOpenModal,
 }) => {
   const handleDetailBlog = () => {
-    handleOpenNewModal();
+    handleOpenModal();
   };
 
   return (

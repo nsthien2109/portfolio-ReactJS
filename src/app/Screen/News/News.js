@@ -6,11 +6,10 @@ import NewItem from "./NewItem";
 import NewModal from "./NewModal";
 
 const News = () => {
-  const [newModalOpen, setNewModalOpen] = useState(false);
-  const [idBlogDetail, setIdBlogDetail] = useState(null);
+  const [isOpenModal, setIsOpenModal] = useState(false);
 
-  const handleOpenNewModal = (id) => {
-    setNewModalOpen(!newModalOpen);
+  const handleOpenModal = () => {
+    setIsOpenModal(!isOpenModal);
     //setIdBlogDetail(id);
   };
 
@@ -25,35 +24,35 @@ const News = () => {
               dateNew="25/06/2022"
               titleNew="Format releases a new tool that enables direct video hosting"
               imageNew={blog_term}
-              handleOpenNewModal={handleOpenNewModal}
+              handleOpenModal={handleOpenModal}
             />
             <NewItem
               authorNew="Nguyen Thien"
               dateNew="25/06/2022"
               titleNew="Format releases a new tool that enables direct video hosting"
               imageNew={blog_term}
-              handleOpenNewModal={handleOpenNewModal}
+              handleOpenModal={handleOpenModal}
             />
             <NewItem
               authorNew="Nguyen Thien"
               dateNew="25/06/2022"
               titleNew="Format releases a new tool that enables direct video hosting"
               imageNew={blog_term}
-              handleOpenNewModal={handleOpenNewModal}
+              handleOpenModal={handleOpenModal}
             />
             <NewItem
               authorNew="Nguyen Thien"
               dateNew="25/06/2022"
               titleNew="Format releases a new tool that enables direct video hosting"
               imageNew={blog_term}
-              handleOpenNewModal={handleOpenNewModal}
+              handleOpenModal={handleOpenModal}
             />
             <NewItem
               authorNew="Nguyen Thien"
               dateNew="25/06/2022"
               titleNew="Format releases a new tool that enables direct video hosting"
               imageNew={blog_term}
-              handleOpenNewModal={handleOpenNewModal}
+              handleOpenModal={handleOpenModal}
             />
           </div>
         </div>
@@ -61,10 +60,7 @@ const News = () => {
           <Pagination defaultCurrent={1} total={50} />
         </div>
       </div>
-      <NewModal
-        newModalOpen={newModalOpen}
-        handleOpenNewModal={handleOpenNewModal}
-      />
+      <NewModal isOpenModal={isOpenModal} handleOpenModal={handleOpenModal} />
     </div>
   );
 };

@@ -1,8 +1,9 @@
 import React from "react";
 import PageHeader from "../../../components/PageHeader/PageHeader";
-import Map from "react-map-gl";
+import Map, { Marker } from "react-map-gl";
 import { Slide } from "react-awesome-reveal";
 import mapboxgl from "mapbox-gl";
+import markerUrl from "../../../assets/icons/pin.png";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoiYWxsZW5od2tpbSIsImEiOiJja21ydzdiZXUwYnprMnBwZjBoaml1MjJvIn0.YFuQaFPaHsd-NQhU002DCw";
@@ -16,13 +17,20 @@ const Contact = () => {
           <div className="map w-full h-[400px] mt-12">
             <Map
               initialViewState={{
-                longitude: 108.2436224,
-                latitude: 15.9906698,
-                zoom: 10,
+                longitude: 108.25304896333833,
+                latitude: 15.975385952771509,
+                zoom: 15,
               }}
               style={{ height: 400 }}
-              mapStyle="mapbox://styles/mapbox/dark-v10"
-            />
+              mapStyle="mapbox://styles/mapbox/dark-v10">
+              <Marker
+                longitude={108.25304896333833}
+                latitude={15.975385952771509}
+                anchor="bottom">
+                <p className="text-white">Vietnam-Korea University</p>
+                <img src={markerUrl} width="20px" />
+              </Marker>
+            </Map>
           </div>
           <div className="w-full mt-8 form-contact">
             <form action="">
